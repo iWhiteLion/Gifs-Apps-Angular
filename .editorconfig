@@ -1,17 +1,49 @@
-# Editor configuration, see https://editorconfig.org
+# EditorConfig - https://editorconfig.org
+# Define reglas comunes para mantener estilo uniforme en todo el proyecto
 root = true
 
+# Archivos por defecto
 [*]
 charset = utf-8
 indent_style = space
 indent_size = 2
 insert_final_newline = true
 trim_trailing_whitespace = true
+end_of_line = lf
 
+# Archivos TypeScript
 [*.ts]
+indent_size = 2
 quote_type = single
 ij_typescript_use_double_quotes = false
 
+# Archivos JavaScript
+[*.js]
+quote_type = single
+
+# Archivos JSON
+[*.json]
+indent_size = 2
+quote_type = double  # JSON siempre usa comillas dobles
+
+# Archivos HTML
+[*.html]
+indent_size = 2
+
+# Archivos CSS/SCSS
+[*.{css,scss}]
+indent_size = 2
+
+# Archivos YAML (por ejemplo para CI/CD)
+[*.{yml,yaml}]
+indent_size = 2
+
+# Archivos Markdown
 [*.md]
 max_line_length = off
 trim_trailing_whitespace = false
+insert_final_newline = true
+
+# Gitignore y similares (sin final newline)
+[.gitignore]
+insert_final_newline = false
