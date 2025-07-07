@@ -9,7 +9,6 @@ import { GifService } from '../../services/gifs.service';
   templateUrl: './trending-page.component.html',
 })
 export default class TrendingPageComponent {
-  // gifs = computed(() => this.gifService.trendingGifs());
 
   gifService = inject(GifService); //Inyeccion de dependencias del servicio GifService
 
